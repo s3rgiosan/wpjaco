@@ -1,0 +1,32 @@
+{
+  "name": "s3rgiosan/wpjaco",
+  "description": "Easy integration of Jaco into your WordPress website.",
+  "type": "wordpress-plugin",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/s3rgiosan/wpjaco",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Sérgio Santos",
+      "email": "me@s3rgiosan.com",
+      "homepage": "https://github.com/s3rgiosan"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/s3rgiosan/wpjaco/issues",
+    "source": "https://github.com/s3rgiosan/wpjaco"
+  },
+  "autoload": {
+    "psr-4": {
+      "s3rgiosan\\Jaco\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "s3rgiosan\\Tests\\Jaco\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "dangoodman/composer-for-wordpress": "^1.0"
+  }
+}
