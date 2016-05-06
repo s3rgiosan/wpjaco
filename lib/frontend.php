@@ -68,7 +68,7 @@ class Frontend {
 
 		$snippet = \get_option( 'jaco_snippet' );
 
-		if ( empty( $snippet ) ) {
+		if ( empty( trim( $snippet ) ) ) {
 			return;
 		}
 
