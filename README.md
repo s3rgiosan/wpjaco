@@ -15,7 +15,7 @@ Easy integration of Jaco into your WordPress website.
 
 This plugin allows you to easily integrate Jaco into your WordPress website.  
 
-[Bug report](https://github.com/s3rgiosan/wpjaco/issues)  
+[Bugs](https://github.com/s3rgiosan/wpjaco/issues)  
 [Source](https://github.com/s3rgiosan/wpjaco)  
 
 ### Usage ###

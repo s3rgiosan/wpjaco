@@ -148,7 +148,7 @@ class Admin {
 
 		\add_settings_field(
 			'jaco_snippet',
-			\__( 'Snippet', 'wpjaco' ),
+			\__( 'Snippet Code', 'wpjaco' ),
 			array( $this, 'display_snippet' ),
 			$this->get_settings_name(),
 			'jaco_settings_section',
@@ -170,6 +170,11 @@ class Admin {
 			'<textarea rows="10" cols="80" id="%1$s" name="%1$s">%2$s</textarea>',
 			'jaco_snippet',
 			\esc_html( \get_option( 'jaco_snippet' ) )
+		);
+
+		printf(
+			'<p class="description">%s</p>',
+			\__( 'This code is going to be embedded into your website between tags &lt;head&gt; and &lt;/head&gt;', 'wpjaco' )
 		);
 
 	}
