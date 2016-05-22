@@ -14,9 +14,6 @@ namespace s3rgiosan\Jaco;
 /**
  * The public-facing functionality of the plugin.
  *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the dashboard-specific stylesheet and JavaScript.
- *
  * @package    Jaco
  * @subpackage Jaco/lib
  * @author     Sérgio Santos <me@s3rgiosan.com>
@@ -28,7 +25,7 @@ class Frontend {
 	 *
 	 * @since  1.0.0
 	 * @access private
-	 * @var    Plugin $plugin This plugin's instance.
+	 * @var    Plugin
 	 */
 	private $plugin;
 

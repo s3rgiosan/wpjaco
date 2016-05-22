@@ -14,9 +14,6 @@ namespace s3rgiosan\Jaco;
 /**
  * The dashboard-specific functionality of the plugin.
  *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the dashboard-specific stylesheet and JavaScript.
- *
  * @package    Jaco
  * @subpackage Jaco/lib
  * @author     Sérgio Santos <me@s3rgiosan.com>
@@ -28,7 +25,7 @@ class Admin {
 	 *
 	 * @since  1.0.0
 	 * @access private
-	 * @var    Plugin $plugin This plugin's instance.
+	 * @var    Plugin
 	 */
 	private $plugin;
 
@@ -37,9 +34,9 @@ class Admin {
 	 *
 	 * @since  1.0.0
 	 * @access protected
-	 * @var    string $settingsname The string used to uniquely identify this plugin settings group name.
+	 * @var    string
 	 */
-	protected $settingsname = 'jaco_settings';
+	protected $settings_name = 'jaco_settings';
 
 	/**
 	 * Initialize the class and set its properties.
@@ -58,7 +55,7 @@ class Admin {
 	 * @return string The settings group name.
 	 */
 	public function get_settings_name() {
-		return $this->settingsname;
+		return $this->settings_name;
 	}
 
 	/**
@@ -67,6 +64,10 @@ class Admin {
 	 * @since 1.0.0
 	 */
 	public function admin_settings_menu() {
+
+		if ( ! \current_user_can( 'manage_options' ) ) {
+			return;
+		}
 
 		\add_options_page(
 			\__( 'Jaco', 'wpjaco' ),
@@ -127,7 +128,7 @@ class Admin {
 	/**
 	 * Register settings fields.
 	 *
-	 * @since    1.0.0
+	 * @since 1.0.0
 	 */
 	public function register_settings_fields() {
 		$this->register_snippet_field();
@@ -149,7 +150,7 @@ class Admin {
 		\add_settings_field(
 			'jaco_snippet',
 			\__( 'Snippet Code', 'wpjaco' ),
-			array( $this, 'display_snippet' ),
+			array( $this, 'display_snippet_field' ),
 			$this->get_settings_name(),
 			'jaco_settings_section',
 			array(
@@ -164,7 +165,7 @@ class Admin {
 	 *
 	 * @since 1.0.0
 	 */
-	public function display_snippet() {
+	public function display_snippet_field() {
 
 		printf(
 			'<textarea rows="10" id="%1$s" name="%1$s" class="widefat" style="font-family: Courier New;">%2$s</textarea>',

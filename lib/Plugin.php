@@ -2,9 +2,6 @@
 /**
  * The file that defines the core plugin class
  *
- * A class definition that includes attributes and functions used across both the
- * public-facing side of the site and the dashboard.
- *
  * @link       https://github.com/s3rgiosan/wpjaco/
  * @since      1.0.0
  *
@@ -16,9 +13,6 @@ namespace s3rgiosan\Jaco;
 
 /**
  * The core plugin class.
- *
- * This is used to define internationalization, dashboard-specific hooks, and
- * public-facing site hooks.
  *
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
