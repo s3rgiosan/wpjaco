@@ -2,8 +2,8 @@
 **Contributors:** s3rgiosan    
 **Tags:** jaco, analytics, user, behavior, interaction, testing, feedback, support    
 **Requires at least:** 4.0    
-**Tested up to:** 4.5    
-**Stable tag:** 1.0.2   
+**Tested up to:** 4.6   
+**Stable tag:** 1.0.3   
 **License:** GPLv2 or later    
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html    
 
@@ -40,6 +40,9 @@ Navigate to the 'Jaco' settings page under the Settings menu and paste your snip
 4. Activate the plugin in the Plugin dashboard
 
 ## Changelog ##
+
+### 1.0.3 ###
+* Minor changes  
 
 ### 1.0.2 ###
 * Check if current user can 'manage_options'  

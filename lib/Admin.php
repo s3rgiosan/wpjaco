@@ -74,7 +74,7 @@ class Admin {
 			\__( 'Jaco', 'wpjaco' ),
 			'manage_options',
 			'jaco',
-			array( $this, 'display_option_page' )
+			array( $this, 'display_options_page' )
 		);
 
 	}
@@ -84,7 +84,7 @@ class Admin {
 	 *
 	 * @since 1.0.0
 	 */
-	public function display_option_page() {
+	public function display_options_page() {
 	?>
 		<div class="wrap">
 			<h1><?php \_e( 'Jaco Settings', 'wpjaco' ); ?></h1>
