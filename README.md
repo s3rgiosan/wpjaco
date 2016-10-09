@@ -1,9 +1,11 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/29989aa58394476fadc442f6490a19bf)](https://www.codacy.com/app/s3rgiosan/wpjaco?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s3rgiosan/wpjaco&amp;utm_campaign=Badge_Grade)
+
 # Jaco #
-**Contributors:** s3rgiosan    
+**Contributors:** [s3rgiosan](https://profiles.wordpress.org/s3rgiosan)  
 **Tags:** jaco, analytics, user, behavior, interaction, testing, feedback, support    
 **Requires at least:** 4.0    
 **Tested up to:** 4.6   
-**Stable tag:** 1.0.3   
+**Stable tag:** 1.0.4   
 **License:** GPLv2 or later    
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html    
 
@@ -40,6 +42,9 @@ Navigate to the 'Jaco' settings page under the Settings menu and paste your snip
 4. Activate the plugin in the Plugin dashboard
 
 ## Changelog ##
+
+### 1.0.4 ###
+* Added Codacy (a tool for automated code review) badge.  
 
 ### 1.0.3 ###
 * Minor changes  
