@@ -1,11 +1,15 @@
+[![Latest Stable Version](https://poser.pugx.org/s3rgiosan/wpjaco/v/stable)](https://packagist.org/packages/s3rgiosan/wpjaco)
+[![Total Downloads](https://poser.pugx.org/s3rgiosan/wpjaco/downloads)](https://packagist.org/packages/s3rgiosan/wpjaco)
+[![License](https://poser.pugx.org/s3rgiosan/wpjaco/license)](https://packagist.org/packages/s3rgiosan/wpjaco)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/29989aa58394476fadc442f6490a19bf)](https://www.codacy.com/app/s3rgiosan/wpjaco?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s3rgiosan/wpjaco&amp;utm_campaign=Badge_Grade)
+[![Code Climate](https://codeclimate.com/github/s3rgiosan/wpjaco/badges/gpa.svg)](https://codeclimate.com/github/s3rgiosan/wpjaco)
 
 # Jaco #
 **Contributors:** [s3rgiosan](https://profiles.wordpress.org/s3rgiosan)  
 **Tags:** jaco, analytics, user, behavior, interaction, testing, feedback, support    
 **Requires at least:** 4.0    
 **Tested up to:** 4.6   
-**Stable tag:** 1.0.4   
+**Stable tag:** 1.0.5   
 **License:** GPLv2 or later    
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html    
 
@@ -17,31 +21,45 @@ Easy integration of Jaco into your WordPress website.
 
 This plugin allows you to easily integrate Jaco into your WordPress website.  
 
-[Bugs](https://github.com/s3rgiosan/wpjaco/issues)  
-[Source](https://github.com/s3rgiosan/wpjaco)  
-
 ### Usage ###
 
 Navigate to the 'Jaco' settings page under the Settings menu and paste your snippet.  
 
 ## Installation ##
 
-### Uploading in WordPress Dashboard ###
+### Dashboard ###
 
-1. Navigate to the 'Add New' in the plugins dashboard
-2. Navigate to the 'Upload' area
-3. Select `wpjaco.zip` from your computer
-4. Click 'Install Now'
-5. Activate the plugin in the Plugin dashboard
+1. Go to the 'Plugins' menu, and choose 'Add New'.
+2. Search for 'wpjaco', and then click 'Install Now'.
+2. Click 'Activate'.
 
-### Using FTP ###
+### FTP ###
 
-1. Download `wpjaco.zip`
-2. Extract the `wpjaco` directory to your computer
-3. Upload the `wpjaco` directory to the `/wp-content/plugins/` directory
-4. Activate the plugin in the Plugin dashboard
+1. Download and extract the .zip file.
+2. Upload the unzipped folder to the `/wp-content/plugins/` directory.
+3. Activate the plugin through the 'Plugins' menu.
+
+### Composer ###
+
+`composer require s3rgiosan/wpjaco`
+
+## Frequently Asked Questions ##
+
+### Where can I report bugs? ###
+
+Bugs can be reported on the [GitHub repository](https://github.com/s3rgiosan/wpjaco/issues).
+
+### How can I contribute? ###
+
+Join in on our [GitHub repository](https://github.com/s3rgiosan/wpjaco) and read our [contribution](https://github.com/s3rgiosan/wpjaco/blob/master/CONTRIBUTING.md) guidelines.
 
 ## Changelog ##
+
+### 1.0.5 ###
+* Added Code Climate integration.  
+* Added moar badges (yes I am a badge poser).
+* Added contribution guidelines.  
+* Updated README. 
 
 ### 1.0.4 ###
 * Added Codacy (a tool for automated code review) badge.  
