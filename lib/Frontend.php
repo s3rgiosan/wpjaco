@@ -62,6 +62,13 @@ class Frontend {
 			return;
 		}
 
+		$disable_recording = boolval( \get_post_meta( \get_the_id(), 'jaco_disable_rec', true ) );
+
+		// Disable recording for this content type.
+		if ( $disable_recording ) {
+			return;
+		}
+
 		$snippet = trim( \get_option( 'jaco_snippet' ) );
 
 		if ( empty( $snippet ) ) {

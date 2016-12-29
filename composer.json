@@ -2,7 +2,10 @@
   "name": "s3rgiosan/wpjaco",
   "description": "Easy integration of Jaco into your WordPress website.",
   "type": "wordpress-plugin",
-  "keywords": ["wordpress", "plugin"],
+  "keywords": [
+    "wordpress",
+    "plugin"
+  ],
   "homepage": "https://github.com/s3rgiosan/wpjaco",
   "license": "GPL-2.0+",
   "authors": [
